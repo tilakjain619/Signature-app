@@ -1,0 +1,44 @@
+.main-container{
+    width: min(600px, 98%);
+    margin: auto;
+}
+.main-canvas{
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 100%;
+}
+label{
+    text-align: center;
+    width: 30%;
+}
+input{
+    display: block;
+    width: 100%;
+    outline: none;
+    height: 20px;
+}
+.top-controls, .bottom-controls{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 8px 0;
+}
+#fontWeight{
+    padding: 10px;
+}
+@media (max-width: 500px){
+    label{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    input{
+        width: 100px;
+        margin: 2px auto !important;
+    }
+    .top-controls, .bottom-controls{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
